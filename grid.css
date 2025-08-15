@@ -63,6 +63,7 @@ img:hover{
   display: flex;
   flex-direction: column; 
   align-items: center; 
+  text-align: center;
 }
   
 
@@ -108,3 +109,19 @@ p {
   font-family: "Knewave", system-ui;
   color: rgb(255, 200, 47);
 }
+@media (max-width: 480px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .main img {
+        width: 100%;
+        height: auto;
+    }
+
+    .main > div {
+        padding: 8px;
+    }
+}
+
